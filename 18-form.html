@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>폼 관련 요소</title>
   </head>
+
   <body>
     <h1>폼 관련 요소</h1>
-    <form action="서버 URL" method="get" id="searchForm">
+    <form
+      action="https://formspree.io/f/xeqwwbwk"
+      method="POST"
+      id="searchForm"
+    >
       <fieldset>
         <legend>검색</legend>
         <div>
-          <label for="search">자료검색</label>
+          <label for="search">검색어</label>
           <input
             id="search"
             type="search"
-            maxlength="10"
-            minlength="6"
-            placeholder="검색하기"
+            placeholder="검색어"
+            name="search"
+            required
           />
         </div>
       </fieldset>
     </form>
-
     <button type="submit" form="searchForm">검색</button>
   </body>
 </html>
+0 comments on commit d0feaf1
