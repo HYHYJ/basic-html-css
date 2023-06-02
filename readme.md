@@ -81,3 +81,30 @@
   코드를 작성하여 스타일을 적용합니다.
 </p>
 ```
+
+### font 추가 방법 학습
+
+---
+
+<https://fonts.google.com/>
+
+```html
+<title>font family 관련 속성</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700&display=swap"
+  rel="stylesheet"
+/>
+```
+
+```css
+html {
+  font-size: 0.625em;
+}
+body {
+  font-size: 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+}
+```
